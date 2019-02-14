@@ -1,0 +1,157 @@
+Create three variables and assign numerical values to each of these variables.
+Then write one or more statements that carry out the following types of mathematical operations using these variables: addition, subtraction, multiplication, division, raising to a power.
+
+foo <- 1
+bar <- 2
+baz <- 3
+foo + bar / baz * foo ^ bar
+
+foo = 1
+bar = 2
+baz = 3
+foo + bar / baz * foo ^ bar
+
+Create three variables and assign string values to each of these variables.
+Write a statement that joins the three strings into a single string. Write some code that will print out the string. 
+Write some code that will test to see if a substring of your choosing is contained within the the larger string.
+
+s1 <- "one"
+s2 <- "two"
+s3 <- "three"
+paste(s1,s2,s3, sep='')
+print(paste(s1,s2,s3, sep=''))
+grep("two",s4)
+
+s1 = "one"
+s2 = "two"
+s3 = "three"
+s4 = s1 + s2 + s3
+print(s4)
+"two" in s4
+
+Create three variables and assign lists to each of these variables. Join the three lists into a new list containing three distinct sublists (a list of three lists). 
+Also create a list that has no sublists (all the original list elements are part of a single larger list). 
+Create a fourth list by splitting this resulting list in half and assigning the second half of the list to a new variable. 
+Extract the last item of this list (it can either stay in the original list or be removed from it) and assign this item to a variable.
+
+
+list1 <- c(1,2)
+list2 <- c(3,4)
+list3 <- c(4,5)
+list4 <- list(list1,list2,list3)
+list5 <- c(list1,list2,list3)
+list6 <- list5[1:(length(list5)/2)]
+lastitem <- list5[length(list5)]
+
+
+list1 = [1,2]
+list2 = [3,4]
+list3 = [4,5]
+list4 = [list1,list2,list3]
+list4
+list5 = list1 + list2 + list3
+list5
+list6 = list5[1:len(list5)/2]
+list6
+list6 = list5[0:len(list5)/2]
+lastitem = list5[len(list5)-1]
+
+
+Write a statement that contains at least three nested blocks. 
+Use at least three of the following control flow options: if, if else, while, for, break, continue (python only), next, switch.
+
+i<-1
+while (i<10)
+{
+	paste("i is ",i)
+	if(i<3)
+	{
+		if(i<2)
+		{
+			i<-i+1
+		}
+		i<-i+2
+	}
+	else{i<-i+1}
+}
+
+i=1
+while i<10:
+	print("i is ",i)
+	if i<3:
+		if i<2:
+			i=i+1
+		i=i+2
+	else:
+		i=i+1
+
+
+Write a function that takes three arguments as input and returns one value. Call the function with arguments of your choosing.
+
+myfunction <- function(x,y,z){return(x+y+z)}
+myfunction(1,2,3)
+ 
+
+def myfunction(x,y,z):
+	return x+y+z
+
+myfunction(1,2,3)
+
+
+Execute the relevant command that shows a list of the packages (for R) or modules (for Python) that are currently installed in your Jupyter notebook environment (Hint - use the internet, example notebooks and handouts to help you find the relevant command).
+Use available documentation to determine what some of these packages/modules do (Hint - take a look at the Python and R notebooks that are available - you may notice some relevant information here). Choose a module/package from this list and load the relevant package/module if necessary.
+Write some code that uses functions and objects supplied by this package.
+
+library()
+installed.packages()
+library(ggplot2)
+
+help('modules')
+import numpy as np
+
+Print to the standard output of the Jupyter notebook (in this case, the standard output is the space below a code cell in the notebook that is generated when you run a cell) three sentences of your choosing, on three separate lines, using a single statement of code.
+
+cat("this\n","is\n","it")
+
+print("this\nis\nit")
+
+Locate a comma separated values (csv) file stored in some directory on your computer (Hint - there should be a folder called Data in the main notebook directory). Read the data in this file into the notebook and store the results in one or more variables.
+
+
+foo <- read.csv("ottawacollisiondata2014-2017.csv", stringsAsFactors=FALSE)
+head(foo)
+
+
+import os
+os.chdir("/Users/jenschellinck/Documents/sysabee/projects/Sysabee_Workshops/association_rules_pipeline")
+os.getcwd()
+fh = open("ottawacollisiondata2014-2017.csv","r")
+print fh.read(5)
+
+
+import csv
+with open('ottawacollisiondata2014-2017.csv') as csvfile:
+	reader = csv.DictReader(csvfile)
+ 
+
+Create a new file and write four lines in CSV format to this file. In a separate statement, write four more lines to this existing file, without overwriting the original file.
+
+
+fileConn<-file("output.txt")
+writeLines(c("Hello","World"), fileConn)
+close(fileConn)
+write("more stuff",file="output.txt",append=TRUE)
+
+
+file = open("testfile.txt","w") 
+file.write("Hello World\n") 
+file.write("This is our new text file\n") 
+file.write("and this is another line.\n") 
+file.write("Why? Because we can.\n") 
+file.close() 
+
+file = open("testfile.txt","a")
+file.write("Why? Because we can again!\n")
+file.close() 
+
+
