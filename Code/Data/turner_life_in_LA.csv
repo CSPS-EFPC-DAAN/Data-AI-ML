@@ -1,0 +1,17 @@
+lon,lat,affluence,unemployment,urban.stress,prop.white,lon.class,lat.class
+183,104,2,2,1,1,West,North
+329,155,2,2,1,1,Central,North
+87,183,1,2,1,1,West,North
+154,184,2,2,1,1,West,North
+224,225,2,2,1,1,Central,North
+139,266,1,1,1,1,West,Central
+156,335,1,1,1,1,West,Central
+222,312,1,1,2,1,Central,Central
+352,304,3,2,2,1,East,Central
+433,320,3,2,2,1,East,Central
+238,385,2,3,1,1,Central,South
+314,373,3,1,2,1,Central,Central
+394,381,3,3,3,2,East,South
+355,437,3,3,2,3,East,South
+259,471,2,2,1,1,Central,South
+385,634,3,2,2,1,East,South
