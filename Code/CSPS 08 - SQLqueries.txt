@@ -1,0 +1,16 @@
+1. Sample SQL query that can be used to create a database view in SQLite, that can then be exported
+
+select FirstName, LastName, State, Country, g.Name, t.Name, InvoiceDate, m.UnitPrice, Milliseconds
+from customers c
+inner join invoices i
+on c.Customerid = i.Customerid
+inner join invoice_items m
+on i.Invoiceid = m.Invoiceid
+inner join tracks t
+on m.Trackid = t.Trackid
+inner join genres g
+on t.Genreid = g.Genreid
+
+2. Sample SQL query that can be used to export a view (here named MyNewView) from SQLite
+
+select * from MyNewView
